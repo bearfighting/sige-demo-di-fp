@@ -1,0 +1,23 @@
+{
+  "name": "sige-demo-di-fp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha ./**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bearfighting/sige-demo-di-fp.git"
+  },
+  "author": "Xing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bearfighting/sige-demo-di-fp/issues"
+  },
+  "homepage": "https://github.com/bearfighting/sige-demo-di-fp#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
