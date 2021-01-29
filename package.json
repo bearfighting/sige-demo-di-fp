@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/bearfighting/sige-demo-di-fp#readme",
   "dependencies": {
+    "awilix": "^4.3.1",
     "chai": "^4.2.0",
-    "mocha": "^8.2.1",
-    "node-dependency-injection": "^2.6.8"
+    "jsonfile": "^6.1.0",
+    "mocha": "^8.2.1"
   }
 }
