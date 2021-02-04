@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const { add5, add10 } = require("./cas1");
+const { add5, add10 } = require("./questions");
 
 describe("Test de la fonction de add5", () => {
     it("add5 + 10 est égal à 15", () => {

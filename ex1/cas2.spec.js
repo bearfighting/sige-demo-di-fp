@@ -17,15 +17,15 @@ describe("Addition_Class", () => {
 
 describe("Addtion_Objet", () => {
     it("Addtion_Object pour une addition de 5 + x", () => {
-        let addtion = {};
-        Object.assign(addtion, Addtion_Objet);
-        addtion.x = 5;
-        expect(addtion.add(10)).to.be.equal(15);
+        let inc = {};
+        Object.assign(inc, Addtion_Objet);
+        inc.x = 5;
+        expect(inc.add(10)).to.be.equal(15);
     })
 
     it("Addtion_Object pour une addition de 10 + x", () => {
-        let addtion = {};
-        Object.assign(addtion, Addtion_Objet, { x: 10 });
-        expect(addtion.add(10)).to.be.equal(20);
+        let inc = {};
+        Object.assign(inc, Addtion_Objet, { x: 10 });
+        expect(inc.add(10)).to.be.equal(20);
     })
 })
