@@ -1,9 +1,8 @@
-const { Db1, Db2 } = require("./db");
 class Service {
 
-    constructor() {
-        this.db1 = new Db1();
-        this.db2 = new Db2();
+    constructor({ db1, db2 }) {
+        this.db1 = db1;
+        this.db2 = db2;
     }
 
     combine_person_salary() {
@@ -19,8 +18,18 @@ class Service {
 
         return persons_salaries;
     }
+
+    combine_person_salary_by_id(id) {
+        const person = this.db1.select_by_id(id);
+        const salary = this.db2.select_by_id(id);
+
+        let res = {};
+        Object.assign(res, person, salary);
+
+        return res;
+    }
 }
 
 module.exports = {
-    Mailer, Sender,
+    Service
 }

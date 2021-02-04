@@ -14,13 +14,24 @@ class Service {
             let res = {};
             let salary = salaries.find(salary => salary.id === person.id);
             Object.assign(res, person, salary);
+            console.log(res);
             return res;
         })
 
         return persons_salaries;
     }
+
+    combine_person_salary_by_id(id) {
+        const person = this.db1.select_by_id(id);
+        const salary = this.db2.select_by_id(id);
+
+        let res = {};
+        Object.assign(res, person, salary);
+
+        return res;
+    }
 }
 
 module.exports = {
-    Mailer, Sender,
+    Service,
 }

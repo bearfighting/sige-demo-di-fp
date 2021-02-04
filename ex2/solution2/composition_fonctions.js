@@ -67,7 +67,6 @@ const foo6 = (x) => {
         .fold(modulo3)
 }
 
-
 // const trace = label => value => {
 //     console.log(`${label}: ${value}`);
 //     return value;
