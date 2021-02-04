@@ -17,24 +17,16 @@ describe("Test de l'objet o1", () => {
 
 describe("Test de la classe de o2", () => {
     it("2 * f(10) est égal à 20", () => {
-        class Mock {
-            f1(x) {
-                return x;
-            }
-        }
-        let f = new F2(new Mock());
-        expect(f.f2(10)).to.equal(20);
+        let o = {};
+        Object.assign(o, o2, { o: (x) => x });
+        expect(o.f(10)).to.equal(20);
     })
 })
 
-// describe("Test de la fonction de f3", () => {
-//     it("modulo de res de f(11) est égal à 2", () => {
-//         class Mock {
-//             f2(x) {
-//                 return x;
-//             }
-//         }
-//         let f = new F3(new Mock());
-//         expect(f.f3(11)).to.equal(2);
-//     })
-// })
+describe("Test de la fonction de f3", () => {
+    it("modulo de res de f(11) est égal à 2", () => {
+        let o = {};
+        let f = Object.assign(o, o3, { o: (x) => x });
+        expect(o.f(11)).to.equal(2);
+    })
+})

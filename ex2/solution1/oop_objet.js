@@ -8,15 +8,15 @@ let o1 = {
 let o2 = {
     o: null,
     f: function (x) {
-        let res = this.o.f(x);
+        let res = this.o(x);
         return res * 2;
     },
 }
 
 let o3 = {
     o: null,
-    f: function () {
-        let res = this.o.f(x);
+    f: function (x) {
+        let res = this.o(x);
         return res % 3;
     }
 }

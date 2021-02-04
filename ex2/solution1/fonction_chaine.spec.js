@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const { f1, f2, f3 } = require("./cas1");
+const { f1, f2, f3 } = require("./fonction_chaine");
 
 describe("Test de la fonction de f1", () => {
     it("add5 + 10 est égal à 15", () => {
