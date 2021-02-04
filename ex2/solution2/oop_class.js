@@ -16,6 +16,7 @@ class O {
     }
 }
 
+// La limite: c'est encore difficile devant l'extension ex f1, f2, f3, f4;
 
 module.exports = {
     O,

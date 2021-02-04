@@ -1,11 +1,9 @@
-const express = require("express");
-const app = express();
-const port = 3000;
+const { Db1, Db2 } = require("./db");
 
-app.get("/", (req, res) => {
-    res.send("Hello World");
-});
+// const db1 = new Db1();
+// db1.select();
+// db1.select_by_id(3);
 
-app.listen(port, () => {
-    console.log(`The server is running on the port ${port}`);
-})
+// const db2 = new Db2();
+// db2.select();
+// db2.select_by_id(3);

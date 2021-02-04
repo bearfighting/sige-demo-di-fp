@@ -8,13 +8,13 @@ describe("Test de la fonction de f1", () => {
 })
 
 describe("Test de la fonction de f2", () => {
-    it("add10 + 10 est égal à 20", () => {
+    it("(add15 + 10) * 2 est égal à 20", () => {
         expect(f2(10)).to.be.equal(30);
     })
 })
 
 describe("Test de la fonction de f3", () => {
-    it("add10 + 10 est égal à 20", () => {
+    it("(add15 + 11) * 2 % 3 est égal à 20", () => {
         expect(f3(11)).to.be.equal(2);
     })
 })
